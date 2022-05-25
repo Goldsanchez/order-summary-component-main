@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--Pale-blue);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: var(--Pale-blue);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px;
+}
+/* Section header */
+.header {
+    width: 100%;
+    height: 160px;
+    background-image: url("/images/illustration-hero.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 15px 15px 0 0;
+}
+/* Section summary */
+.summary{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.summary-title{
+    text-align: center;
+    padding: 20px 20px 0px 20px;
+    color: var(--Dark-blue);
+    font-weight: 900;
+
+}
+.summary-description{
+    text-align: center;
+    padding: 21px;
+    margin-bottom: 10px;
+    color: var(--Desaturated-blue);
+
+}
+.plan{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    padding: 10px 0px;
+    margin-bottom: 20px;
+    background-color: var(--Very-pale-blue);
+    border-radius: 15px;
+
+}
+.plan-music{
+    margin: 0 15px 0 15px;
+}
+.plan-music-img{
+    display: block;
+}
+.plan-annual{
+    margin: 0 40px 0px 0px;
+}
+.plan-annual-title{
+    color: var(--Dark-blue);
+    font-weight: 900;
+}
+.plan-annual-price{
+    color: var(--Desaturated-blue);
+    font-size: 16.3px;
+}
+.plan-change-hover:hover{
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(118, 108, 241);
+    font-weight: 700;
+}
+.button-payment-hover:hover{
+    cursor: pointer;
+    background-color: rgb(118, 108, 241);
+}
+.button-order-hover:hover{
+    cursor: pointer;
+    color: var(--Dark-blue);
+
+}
+
+.button-payment{
+    display: block;
+    width: 100%;
+    padding: 13px 0;
+    background-color: var(--Bright-blue);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-weight: 900;
+
+}
+.button-order{
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    background-color: white;
+    border: none;
+    color: var(--Desaturated-blue);
+    font-weight: 900;
+
+}
+
+/* Footer */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    padding: 20px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+/*-----------------------------------(>1440px)---------------------------------*/
+@media only screen and (min-width: 1440px) {
+    main{
+        width: 413px;
+    }
+    .header{
+        height: 200px;
+    }
+    .summary{
+        padding: 50px;
+    }
+    .plan-annual{
+        margin: 0 65px 0px 0px;
+        padding: 15px 0px;
+    }
+    .plan-music{
+        margin: 0 15px 0 20px;
+    }
+}
